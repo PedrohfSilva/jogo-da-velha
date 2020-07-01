@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Jogo da velha</title>
+        <link rel="stylesheet" href="css/estilos.css">
+        <script language="javascript" src="js/scripts2.js"></script>
+    </head>
+
+    <body>
+        <div id="interface">
+            <header id="cabecalho">
+                <h1 id="titulo_principal">JOGO DA VELHA</h1>
+            </header>
+
+            <hr>
+
+            <section id="jogo">
+                <div id="numJogadores">
+                    <button id="umJogador" onclick="umJogador()">1 jogador</button>
+                    <button id="doisJogadores" onclick="doisJogadores()">2 jogadores</button>
+                </div>
+
+                <form>
+                    <fieldset id="nomesJogadores">
+                        <input id="nomeJogador1" type="text" size="20" maxlength="16" placeholder="Jogador 1">
+                        <input id="nomeJogador2" type="text" size="20" maxlength="16" placeholder="Jogador 2">
+                    </fieldset>
+                </form>
+
+                <div id="jogadores">
+                    <p id="jogador1">Jogador 1</p>
+                    <p id="jogador2">Jogador 2</p>
+                </div>
+
+                <hr>
+
+                <table id="tabela">
+                    <caption></caption>
+                    <tr>
+                        <td id="c1" class="top left" onclick="jogada(1)"></td>
+                        <td id="c2" class="top" onclick="jogada(2)"></td>
+                        <td id="c3" class="top right" onclick="jogada(3)"></td>
+                    </tr>
+                    <tr>
+                        <td id="c4" class="left" onclick="jogada(4)"></td>
+                        <td id="c5" onclick="jogada(5)"></td>
+                        <td id="c6" class="right" onclick="jogada(6)"></td>
+                    </tr>
+                    <tr>
+                        <td id="c7" class="bottom left" onclick="jogada(7)"></td>
+                        <td id="c8" class="bottom" onclick="jogada(8)"></td>
+                        <td id="c9" class="bottom right" onclick="jogada(9)"></td>
+                    </tr>
+                </table>
+
+                <hr>
+
+                <button id="jogar" onclick="jogar()">JOGAR</button>
+                <button id="recomecar" onclick="recomecar()">Recomeçar</button>
+                <button id="menu" onclick="menu()">Menu principal</button>
+            </section>
+
+            <hr>
+
+            <footer id="rodape">
+            </footer>
+        </div>
+    </body>
+</html>
